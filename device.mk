@@ -20,8 +20,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     bootctrl.sdm845
-    bootctrl.sdm845.recovery
-
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.sdm845 \
     libgptutils \
