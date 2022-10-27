@@ -51,9 +51,6 @@ AB_OTA_PARTITIONS := \
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 TARGET_NO_RECOVERY := true
 BOARD_USES_RECOVERY_AS_BOOT := true
-PRODUCT_PACKAGES += \
-  update_engine \
-  update_verifier
 TARGET_USES_UEFI := true
 
 # Verified Boot
