@@ -1,1 +1,1 @@
-LOCAL_PATH := device/sony/akari
+LOCAL_PATH := device/sony/xz2c

@@ -1,4 +1,4 @@
-ro.display.series=Xperia XZ2
+ro.display.series=Xperia XZ2 Compact
 #ro.build.version.release_orig=$PLATFORM_VERSION
 #ro.build.version.security_patch_orig=$PLATFORM_SECURITY_PATCH
 ro.product.board=sdm845

@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_akari.mk
+    $(LOCAL_DIR)/omni_xz2c.mk

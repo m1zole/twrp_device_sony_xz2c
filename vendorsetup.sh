@@ -1,1 +1,1 @@
-add_lunch_combo omni_akari-eng
+add_lunch_combo omni_xz2c-eng

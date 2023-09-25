@@ -62,6 +62,8 @@ TARGET_USES_UEFI := true
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 service_locator.enable=1 swiotlb=2048 androidboot.configfs=true firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7 zram.backend=z3fold loop.max_part=7 panic_on_err=1 msm_drm.dsi_display0=dsi_panel_cmd_display:config0 buildvariant=user
 BOARD_KERNEL_CMDLINE += skip_override androidboot.fastboot=1
+BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0xa84000
+BOARD_KERNEL_CMDLINE += restore_msm_uart=0x03404000
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
@@ -72,13 +74,16 @@ TARGET_PREBUILT_KERNEL := device/sony/akari/prebuilt/Image.gz-dtb
 TARGET_BOARD_PLATFORM := sdm845
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno630
 
+# Screen
+TARGET_SCREEN_DENSITY := 480
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x04000000
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4227858432
 # Reserve space for data encryption (44712771584-16384)
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 44712755200
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 51448807424
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_PARTITION_SIZE := 1056714752
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
