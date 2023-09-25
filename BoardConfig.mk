@@ -115,14 +115,6 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
-TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
-TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_INCLUDE_NTFS_3G := true
-TW_MAX_BRIGHTNESS := 1023
-TARGET_RECOVERY_DEVICE_MODULES += android.hardware.boot@1.0
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.0/file"
-TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
-TW_NO_SCREEN_BLANK := true
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-08-01
