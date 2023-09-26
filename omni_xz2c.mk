@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := akari
+PRODUCT_RELEASE_NAME := xz2c
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -23,17 +23,17 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/sony/akari/device.mk)
+$(call inherit-product, device/sony/xz2c/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := akari
-PRODUCT_NAME := omni_akari
+PRODUCT_DEVICE := xz2c
+PRODUCT_NAME := omni_xz2c
 PRODUCT_BRAND := Sony
-PRODUCT_MODEL := Xperia XZ2
+PRODUCT_MODEL := Xperia XZ2 Compact
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_PLATFORM := tama
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=XperiaXZ2 \
-    BUILD_PRODUCT=XperiaXZ2 \
-    TARGET_DEVICE=XperiaXZ2
+    PRODUCT_NAME=XperiaXZ2Compact \
+    BUILD_PRODUCT=XperiaXZ2Compact \
+    TARGET_DEVICE=XperiaXZ2Compact
