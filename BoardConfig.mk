@@ -47,7 +47,7 @@ AB_OTA_PARTITIONS := \
   system \
   vendor
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
-TARGET_NO_RECOVERY := true
+TARGET_NO_RECOVERY := false
 BOARD_USES_RECOVERY_AS_BOOT := true
 PRODUCT_PACKAGES += \
   update_engine \
